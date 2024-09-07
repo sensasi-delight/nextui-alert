@@ -1,0 +1,39 @@
+{
+	"name": "nextui-alert",
+	"version": "0.1.0",
+	"description": "Alert component for React using NextUI",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "rimraf dist && tsc"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sensasi-delight/nextui-alert.git"
+	},
+	"keywords": [
+		"NextUI",
+		"Alert",
+		"React",
+		"Component"
+	],
+	"author": "sensasi_delight",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/sensasi-delight/nextui-alert/issues"
+	},
+	"homepage": "https://github.com/sensasi-delight/nextui-alert#readme",
+	"dependencies": {
+		"@nextui-org/button": "^2.0.37",
+		"@nextui-org/card": "^2.0.33",
+		"lucide-react": "^0.439.0"
+	},
+	"devDependencies": {
+		"@types/react": "^18.3.5",
+		"rimraf": "^6.0.1",
+		"typescript": "^5.5.4"
+	}
+}
