@@ -14,13 +14,13 @@ The `NextuiAlert` component is a versatile, customizable alert for React applica
     -   [Adding Close Functionality](#adding-close-functionality)
     -   [Customizing Content](#customizing-content)
 -   [Props](#props)
-<!-- - [Contributing](#contributing) -->
+-   [Contributing](#contributing)
 -   [License](#license)
 
 ## Installation
 
 > [!IMPORTANT]
-> If you are not using NextUI as your primary UI library in your project, I am not recommending using this package. This package is built on top of NextUI components and requires NextUI to work correctly. However, if you are decided to use NextUI, you can consult the [NextUI documentation](https://nextui.org/docs/getting-started) to get started.
+> If you are not using NextUI as your primary UI library in your project, we are not recommending using this package. This package is built on top of NextUI components and requires NextUI to work correctly. However, if you are decided to use NextUI, you can consult the [NextUI documentation](https://nextui.org/docs/getting-started) to get started.
 
 To start using `NextuiAlert`, install the package using npm or yarn:
 
@@ -121,11 +121,11 @@ The `NextuiAlert` component extends the `Card` component from NextUI, meaning it
 | `endContent`   | `ReactNode`                                    | `undefined`         | Custom content to display at the end of the alert (optional).                              |
 | `onClose`      | `() => void`                                   | `undefined`         | Callback function to handle closing the alert. When provided, a close button is displayed. |
 
-<!-- ## Contributing
+## Contributing
 
 Contributions are welcome! If you're interested in improving this project or adding new features, check out our [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
 
-Your contributions—whether bug fixes, new features, or suggestions—are greatly appreciated! -->
+Your contributions—whether bug fixes, new features, or suggestions—are greatly appreciated!
 
 ## License
 
