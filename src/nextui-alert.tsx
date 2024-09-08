@@ -19,11 +19,11 @@ export default function NextuiAlert({
 	endContent,
 	...restProps
 }: NextuiAlertProps) {
-	const color = _color || severity === "info" ? "primary" : severity;
+	const color = _color ?? severity === "info" ? "primary" : severity;
 	const startContent =
 		_startContent === false
 			? undefined
-			: _startContent || getDefaultStartContent(severity);
+			: _startContent ?? getDefaultStartContent(severity);
 
 	return (
 		<Card
