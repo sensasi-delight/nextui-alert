@@ -2,6 +2,8 @@
 
 The `NextuiAlert` component is a versatile, customizable alert for React applications, built using [NextUI](https://nextui.org/) and TypeScript. This component provides a sleek, flexible solution for notifications, error handling, and other alert use cases, easily integrated into any project.
 
+<img src="https://github.com/user-attachments/assets/95a04a63-45cc-49c9-9d78-4ffa591b3aaa" height="auto" width="640" />
+
 > [!TIP]
 > You can try the component live in [CodeSandbox](https://codesandbox.io/p/github/sensasi-delight/nextui-alert-demo/main). Click the link to see a fully interactive example of the alert in action.
 
