@@ -1,0 +1,30 @@
+name: Fix Code Style
+
+on:
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: NPM clean install
+              run: npm ci
+
+            - name: npm run lint:fix
+              run: npm run lint:fix
+
+            - name: Commit linted files
+              uses: stefanzweifel/git-auto-commit-action@v5
+              with:
+                  commit_message: 'Auto fix lint error(s)'
+            # - name: Test
+            #   run: npm run test
+
+            - name: Build
+              run: npm run build
