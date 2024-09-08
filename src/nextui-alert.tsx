@@ -1,5 +1,3 @@
-"use client";
-
 import type NextuiAlertProps from "./@types/nextui-alert-props";
 
 import { XIcon } from "lucide-react";
