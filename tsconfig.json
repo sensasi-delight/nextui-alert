@@ -1,23 +1,23 @@
 {
-	"compilerOptions": {
-		"jsx": "react-jsx",
-		"target": "esnext",
-		"module": "esnext",
-		"moduleResolution": "node",
+    "compilerOptions": {
+        "jsx": "react-jsx",
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
 
-		"allowJs": false,
-		"declaration": true,
-		"esModuleInterop": true,
-		"forceConsistentCasingInFileNames": true,
-		"isolatedModules": true,
-		"noEmit": true,
-		"sourceMap": true,
-		"strict": true,
-		"skipLibCheck": true,
+        "allowJs": true,
+        "declaration": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "sourceMap": true,
+        "strict": true,
+        "skipLibCheck": true,
 
-		"outDir": "./dist",
-		"rootDir": "./src"
-	},
-	"include": ["src/**/*"],
-	"exclude": ["**/node_modules", "**/dist", "**/*.md"]
+        "outDir": "./dist"
+    },
+    "include": ["src/**/*.ts", "src/**/*.tsx"],
+    "files": ["eslint.config.mjs", "rollup.config.mjs"],
+    "exclude": ["**/node_modules", "dist/**/*.*", "**/*.md"]
 }
