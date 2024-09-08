@@ -1,44 +1,57 @@
 {
-	"name": "nextui-alert",
-	"version": "0.1.1",
-	"description": "Alert component for React using NextUI",
-	"author": {
-		"name": "Zain Adam",
-		"email": "zainadam.id@gmail.com"
-	},
-	"license": "MIT",
-	"keywords": [
-		"NextUI",
-		"Alert",
-		"React",
-		"Component"
-	],
-	"homepage": "https://github.com/sensasi-delight/nextui-alert#readme",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/sensasi-delight/nextui-alert.git"
-	},
-	"bugs": {
-		"url": "https://github.com/sensasi-delight/nextui-alert/issues"
-	},
-	"module": "dist/index.es.js",
-	"types": "dist/index.d.ts",
-	"files": [
-		"dist"
-	],
-	"scripts": {
-		"build": "tsc && rimraf dist/* --glob && rollup -c"
-	},
-	"dependencies": {
-		"@nextui-org/button": "^2.0.37",
-		"@nextui-org/card": "^2.0.33",
-		"lucide-react": "^0.439.0"
-	},
-	"devDependencies": {
-		"@rollup/plugin-typescript": "^11.1.6",
-		"@types/react": "^18.3.5",
-		"rimraf": "^6.0.1",
-		"rollup": "^4.21.2",
-		"typescript": "^5.5.4"
-	}
+    "name": "nextui-alert",
+    "version": "0.1.1",
+    "description": "Alert component for React using NextUI",
+    "author": {
+        "name": "Zain Adam",
+        "email": "zainadam.id@gmail.com"
+    },
+    "license": "MIT",
+    "keywords": [
+        "NextUI",
+        "Alert",
+        "React",
+        "Component"
+    ],
+    "homepage": "https://github.com/sensasi-delight/nextui-alert#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sensasi-delight/nextui-alert.git"
+    },
+    "bugs": {
+        "url": "https://github.com/sensasi-delight/nextui-alert/issues"
+    },
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rollup -c",
+        "clean": "rimraf dist/* --glob",
+        "lint": "tsc && eslint",
+        "lint:fix": "eslint --fix"
+    },
+    "dependencies": {
+        "@nextui-org/button": "^2.0.37",
+        "@nextui-org/card": "^2.0.33",
+        "lucide-react": "^0.439.0"
+    },
+    "devDependencies": {
+        "@babel/eslint-parser": "^7.25.1",
+        "@babel/preset-env": "^7.25.4",
+        "@eslint/js": "^9.10.0",
+        "@rollup/plugin-typescript": "^11.1.6",
+        "@types/eslint__js": "^8.42.3",
+        "@types/eslint-config-prettier": "^6.11.3",
+        "@types/react": "^18.3.5",
+        "eslint": "^9.10.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "prettier": "3.3.3",
+        "rimraf": "^6.0.1",
+        "rollup": "^4.21.2",
+        "typescript": "^5.5.4",
+        "typescript-eslint": "^8.4.0"
+    }
 }
