@@ -1,3 +1,3 @@
-type VariantType = "solid" | "bordered" | "flat";
+type VariantType = 'solid' | 'bordered' | 'flat'
 
-export default VariantType;
+export default VariantType

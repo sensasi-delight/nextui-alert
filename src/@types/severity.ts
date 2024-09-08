@@ -1,3 +1,3 @@
-type SeverityType = "info" | "success" | "warning" | "danger";
+type SeverityType = 'info' | 'success' | 'warning' | 'danger'
 
-export default SeverityType;
+export default SeverityType
