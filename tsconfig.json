@@ -11,7 +11,7 @@
         "forceConsistentCasingInFileNames": true,
         "isolatedModules": true,
         "noEmit": true,
-        "sourceMap": true,
+        "sourceMap": false,
         "strict": true,
         "skipLibCheck": true,
 
