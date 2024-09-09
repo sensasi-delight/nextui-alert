@@ -1,4 +1,5 @@
 import typescript from '@rollup/plugin-typescript'
+import terser from '@rollup/plugin-terser'
 
 const config = [
     {
@@ -7,7 +8,7 @@ const config = [
             {
                 file: './dist/index.mjs',
                 format: 'es',
-                sourcemap: true,
+                plugins: [terser()],
             },
         ],
         external: [

@@ -1,6 +1,6 @@
 {
     "name": "nextui-alert",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Alert component for React using NextUI",
     "author": {
         "name": "Zain Adam",
@@ -27,7 +27,7 @@
         "dist"
     ],
     "scripts": {
-        "build": "rollup -c",
+        "build": "rollup -c --minifyInternalExports true --treeshake smallest",
         "clean": "rimraf dist/* --glob",
         "lint": "tsc && eslint",
         "lint:fix": "eslint --fix"
@@ -41,6 +41,7 @@
         "@babel/eslint-parser": "^7.25.1",
         "@babel/preset-env": "^7.25.4",
         "@eslint/js": "^9.10.0",
+        "@rollup/plugin-terser": "^0.4.4",
         "@rollup/plugin-typescript": "^11.1.6",
         "@types/eslint__js": "^8.42.3",
         "@types/eslint-config-prettier": "^6.11.3",
