@@ -30,12 +30,16 @@
         "build": "rollup -c --minifyInternalExports true --treeshake smallest",
         "clean": "rimraf dist/* --glob",
         "lint": "tsc && eslint",
-        "lint:fix": "eslint --fix"
+        "lint:fix": "eslint --fix",
+        "check:update": "ncu",
+        "update": "ncu -u -t patch && npm install",
+        "update:minor": "ncu -u -t minor && npm install",
+        "update:major": "ncu -u && npm install"
     },
     "dependencies": {
-        "@nextui-org/button": "^2.0.37",
-        "@nextui-org/card": "^2.0.33",
-        "lucide-react": "^0.439.0"
+        "@nextui-org/button": "^2.0.38",
+        "@nextui-org/card": "^2.0.34",
+        "lucide-react": "^0.441.0"
     },
     "devDependencies": {
         "@babel/eslint-parser": "^7.25.1",
@@ -49,10 +53,11 @@
         "eslint": "^9.10.0",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-prettier": "^5.2.1",
+        "npm-check-updates": "^17.1.1",
         "prettier": "3.3.3",
         "rimraf": "^6.0.1",
-        "rollup": "^4.21.2",
-        "typescript": "^5.5.4",
-        "typescript-eslint": "^8.4.0"
+        "rollup": "^4.21.3",
+        "typescript": "^5.6.2",
+        "typescript-eslint": "^8.5.0"
     }
 }
