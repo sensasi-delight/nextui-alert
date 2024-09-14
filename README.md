@@ -131,4 +131,4 @@ Your contributions—whether bug fixes, new features, or suggestions—are great
 
 ## License
 
-This project is open source under the MIT License. See the [LICENSE](LICENSE) file for more information.
+This project is open source under the MIT License. See the [LICENSE](https://github.com/sensasi-delight/nextui-alert?tab=MIT-1-ov-file) file for more information.
