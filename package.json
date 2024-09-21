@@ -28,6 +28,7 @@
     ],
     "scripts": {
         "build": "rollup -c --minifyInternalExports true --treeshake smallest",
+        "dev": "rollup -c -w",
         "clean": "rimraf dist/* --glob",
         "lint": "tsc && eslint",
         "lint:fix": "eslint --fix",
