@@ -1,6 +1,6 @@
 {
     "name": "nextui-alert",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "Alert component for React using NextUI",
     "author": {
         "name": "Zain Adam",
