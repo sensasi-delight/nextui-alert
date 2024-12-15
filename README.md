@@ -2,6 +2,9 @@
 
 The `NextuiAlert` component is a versatile, customizable alert for React applications, built using [NextUI](https://nextui.org/) and TypeScript. This component provides a sleek, flexible solution for notifications, error handling, and other alert use cases, easily integrated into any project.
 
+> [!IMPORTANT]
+> The `NextuiAlert` component was created to address the absence of a built-in alert component in NextUI at the time. However, with the release of NextUI [`v2.6.2`](https://github.com/nextui-org/nextui/releases/tag/%40nextui-org%2Freact%402.6.2), an `Alert` component has been introduced. Since the purpose of this package has been fulfilled, we recommend using the [built-in `Alert` component from NextUI](https://nextui.org/docs/components/alert) instead of this package.
+
 <img src="https://github.com/user-attachments/assets/95a04a63-45cc-49c9-9d78-4ffa591b3aaa" height="auto" width="640" />
 
 > [!TIP]
@@ -9,20 +12,20 @@ The `NextuiAlert` component is a versatile, customizable alert for React applica
 
 ## Table of Contents
 
--   [Installation](#installation)
--   [Getting Started](#getting-started)
-    -   [Basic Example](#basic-example)
-    -   [Variants and Severity](#variants-and-severity)
-    -   [Adding Close Functionality](#adding-close-functionality)
-    -   [Customizing Content](#customizing-content)
--   [Props](#props)
--   [Contributing](#contributing)
--   [License](#license)
+- [Installation](#installation)
+- [Getting Started](#getting-started)
+    - [Basic Example](#basic-example)
+    - [Variants and Severity](#variants-and-severity)
+    - [Adding Close Functionality](#adding-close-functionality)
+    - [Customizing Content](#customizing-content)
+- [Props](#props)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Installation
 
-> [!IMPORTANT]
-> If you are not using NextUI as your primary UI library in your project, we are not recommending using this package. This package is built on top of NextUI components and requires NextUI to work correctly. However, if you are decided to use NextUI, you can consult the [NextUI documentation](https://nextui.org/docs/getting-started) to get started.
+> [!WARNING]
+> If you are not using NextUI as your primary UI library in your project, we are not recommending using this package. This package is built on top of NextUI components and requires NextUI to work correctly. However, if you are decided to use NextUI, you can consult the [NextUI documentation](https://nextui.org/docs/guide/introduction) to get started.
 
 To start using `NextuiAlert`, install the package using npm or yarn:
 
@@ -110,18 +113,18 @@ To remove the default icon, set `startContent` to `false`:
 
 ## Props
 
-Since `NextuiAlert` extends the `Card` component from NextUI, it inherits all props from the `Card` component including `shadow`, `fullWidth`, and `radius`. You can view the complete list of props in the [NextUI Card Documentation](https://nextui.org/docs/card).
+Since `NextuiAlert` extends the `Card` component from NextUI, it inherits all props from the `Card` component including `shadow`, `fullWidth`, and `radius`. You can view the complete list of props in the [NextUI Card Documentation](https://nextui.org/docs/components/card).
 
 The `NextuiAlert` component extends the `Card` component from NextUI, meaning it accepts all `Card` props in addition to its own that listed on the table below.
 
 | Prop           | Type                                           | Default             | Description                                                                                |
 | -------------- | ---------------------------------------------- | ------------------- | ------------------------------------------------------------------------------------------ |
-| `severity`     | `"info" \| "warning" \| "success" \| "danger"` | `"warning"`         | Defines the alert type and corresponding color.                                            |
-| `variant`      | `"flat" \| "bordered" \| "solid"`              | `"flat"`            | Defines the appearance style of the alert.                                                 |
-| `title`        | `string`                                       | `undefined`         | The title text displayed prominently at the top of the alert.                              |
-| `startContent` | `ReactNode \| false`                           | Based on `severity` | Defines the content or icon at the start of the alert. Set to `false` to remove the icon.  |
 | `endContent`   | `ReactNode`                                    | `undefined`         | Custom content to display at the end of the alert (optional).                              |
 | `onClose`      | `() => void`                                   | `undefined`         | Callback function to handle closing the alert. When provided, a close button is displayed. |
+| `variant`      | `"flat" \| "bordered" \| "solid"`              | `"flat"`            | Defines the appearance style of the alert.                                                 |
+| `severity`     | `"info" \| "warning" \| "success" \| "danger"` | `"warning"`         | Defines the alert type and corresponding color.                                            |
+| `startContent` | `ReactNode \| false`                           | Based on `severity` | Defines the content or icon at the start of the alert. Set to `false` to remove the icon.  |
+| `title`        | `string`                                       | `undefined`         | The title text displayed prominently at the top of the alert.                              |
 
 ## Contributing
 
