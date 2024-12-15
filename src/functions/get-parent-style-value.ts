@@ -2,49 +2,57 @@ import type ThemeColorType from '../@types/theme-color'
 import type VariantType from '../@types/variant'
 import type { CSSProperties } from 'react'
 
+/**
+ * Get parent style value for the alert
+ */
 export default function getParentStyleValue(
     variant: VariantType,
     color: ThemeColorType,
 ): CSSProperties {
-    const textColor = getTextColor(variant, color)
-
-    if (variant === 'solid') {
-        return {
-            ...BASE_STYLE,
-            color: textColor,
-
-            // .bg-{color}
-            backgroundColor: `hsl(var(--nextui-${color}))`,
-        }
-    }
-
-    if (variant === 'bordered')
-        return {
-            ...BASE_STYLE,
-            color: textColor,
-
-            // .border-2
-            borderWidth: 2,
-
-            // .border-danger
-            '--tw-border-opacity': 1,
-            borderColor: `hsl(var(--nextui-${color}) / var(--nextui-${color}-opacity, var(--tw-border-opacity)))`,
-        } as CSSProperties
-
-    return {
+    const styles = {
         ...BASE_STYLE,
-        color: textColor,
-
-        // .bg-{color}/15
-        backgroundColor: `hsl(var(--nextui-${color}) / 0.15)`,
+        color: getTextColor(variant, color),
+        backgroundColor: getBgColor(variant, color),
     }
+
+    if (variant === 'bordered') {
+        // .border-2
+        styles.borderWidth = 2
+
+        // .border-danger
+        // @ts-expect-error --tw-border-opacity
+        styles['--tw-border-opacity'] = 1
+        styles.borderColor = `hsl(var(--nextui-${color}) / var(--nextui-${color}-opacity, var(--tw-border-opacity)))`
+    }
+
+    return styles
 }
 
-function getTextColor(variant: VariantType, color: ThemeColorType) {
+/**
+ * Get text color for the alert
+ */
+function getTextColor(
+    variant: VariantType,
+    color: ThemeColorType,
+): CSSProperties['color'] {
     if (variant === 'solid') return '#fff' // .text-white
 
     // .text-{color}-800
     return `hsl(var(--nextui-${color}-800) / var(--nextui-${color}-800-opacity, var(--tw-text-opacity)))`
+}
+
+/**
+ * Get background color for the alert
+ */
+function getBgColor(
+    variant: VariantType,
+    color: ThemeColorType,
+): CSSProperties['backgroundColor'] {
+    if (variant === 'solid') return `hsl(var(--nextui-${color}))`
+    if (variant === 'bordered') return 'hsl(var(--nextui-background)))'
+
+    // default variant `flat`
+    return `color-mix(in srgb, hsl(var(--nextui-${color})) 15%, hsl(var(--nextui-background)))`
 }
 
 const BASE_STYLE: CSSProperties = {

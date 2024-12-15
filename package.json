@@ -1,6 +1,6 @@
 {
     "name": "nextui-alert",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "description": "Alert component for React using NextUI",
     "author": {
         "name": "Zain Adam",
@@ -38,27 +38,27 @@
         "update:major": "ncu -u && npm update"
     },
     "dependencies": {
-        "@nextui-org/button": "^2.0.38",
-        "@nextui-org/card": "^2.0.34",
-        "lucide-react": "^0.460.0"
+        "@nextui-org/button": "^2.2.7",
+        "@nextui-org/card": "^2.2.7",
+        "lucide-react": "^0.468.0"
     },
     "devDependencies": {
         "@babel/eslint-parser": "^7.25.9",
         "@babel/preset-env": "^7.26.0",
-        "@eslint/js": "^9.15.0",
+        "@eslint/js": "^9.17.0",
         "@rollup/plugin-terser": "^0.4.4",
         "@rollup/plugin-typescript": "^12.1.1",
         "@types/eslint__js": "^8.42.3",
         "@types/eslint-config-prettier": "^6.11.3",
-        "@types/react": "^18.3.12",
-        "eslint": "^9.15.0",
+        "@types/react": "^18.3.16",
+        "eslint": "^9.17.0",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-prettier": "^5.2.1",
         "npm-check-updates": "^17.1.11",
-        "prettier": "3.3.3",
+        "prettier": "3.4.2",
         "rimraf": "^6.0.1",
-        "rollup": "^4.27.4",
+        "rollup": "^4.28.1",
         "typescript": "^5.7.2",
-        "typescript-eslint": "^8.15.0"
+        "typescript-eslint": "^8.18.0"
     }
 }

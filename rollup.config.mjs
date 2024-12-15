@@ -1,6 +1,11 @@
 import typescript from '@rollup/plugin-typescript'
 import terser from '@rollup/plugin-terser'
 
+/**
+ * Rollup configuration
+ *
+ * @type {import('rollup').RollupOptions}
+ */
 const config = [
     {
         input: 'src/index.ts',

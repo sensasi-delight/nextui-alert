@@ -6,6 +6,9 @@ import {
     TriangleAlertIcon,
 } from 'lucide-react'
 
+/**
+ * Get default start content for the alert
+ */
 export default function getDefaultStartContent(severity: SeverityType) {
     if (severity === 'success') return <CheckCircleIcon />
     if (severity === 'info') return <InfoIcon />
